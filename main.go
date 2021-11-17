@@ -86,7 +86,7 @@ func main() {
 	dsnConfig.DBName = *fDatabase
 
 	if len(*fTable) == 0 {
-		fmt.Println("Please specify the table name using --table")
+		fmt.Println("Please specify the table name using -table=<TABLE_NAME>")
 		os.Exit(1)
 		return
 	}

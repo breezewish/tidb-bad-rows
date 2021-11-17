@@ -47,7 +47,7 @@ env GOOS=linux GOARCH=amd64 go build -o bad_rows main.go
 ## Usage
 
 ```shell
-./bad_rows -table <TABLE_NAME>
+./bad_rows -table=<TABLE_NAME>
 ```
 
 Usually you need to specify other parameters to establish a connection to the remote database:
@@ -76,7 +76,7 @@ Usually you need to specify other parameters to establish a connection to the re
 In case of scanning all columns of all rows takes long time, you can reduce the cost by changing the column projection via `-projection`:
 
 ```shell
-./bad_rows -table <TABLE_NAME> -projection "foo, bar, boz"
+./bad_rows -table=<TABLE_NAME> -projection="foo, bar, boz"
 ```
 
 Which will invoke SQLs like:
