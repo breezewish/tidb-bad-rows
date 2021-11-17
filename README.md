@@ -38,7 +38,7 @@ EXPLAIN ANALYZE
 go build -o bad_rows main.go
 ```
 
-To cross compile for Linux x86:
+To cross compile for Linux x86_64:
 
 ```shell
 env GOOS=linux GOARCH=amd64 go build -o bad_rows main.go
